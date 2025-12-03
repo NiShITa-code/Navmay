@@ -24,7 +24,7 @@ Complete guide to set up Google Sheets as your waitlist database. **Estimated ti
 
 2. **Create New Spreadsheet**
    - Click **"+ Blank"** to create a new sheet
-   - Name it: **"Navamay Waitlist"** (click on "Untitled spreadsheet" at the top)
+   - Name it: **"Navmay Waitlist"** (click on "Untitled spreadsheet" at the top)
 
 3. **Set Up Column Headers**
    In Row 1, add these headers:
@@ -64,7 +64,7 @@ Complete guide to set up Google Sheets as your waitlist database. **Estimated ti
 
 ```javascript
 /**
- * Navamay Waitlist Handler
+ * Navmay Waitlist Handler
  * Automatically saves email submissions to this Google Sheet
  */
 
@@ -274,7 +274,7 @@ vercel --prod
 
 1. **Open your Google Sheet**
    - Go to https://sheets.google.com
-   - Open "Navamay Waitlist"
+   - Open "Navmay Waitlist"
 
 2. **See all signups in real-time!**
    - Each row = one signup
@@ -450,7 +450,7 @@ Your waitlist is now:
 ### Quick Reference
 
 **View emails:**
-https://sheets.google.com → "Navamay Waitlist"
+https://sheets.google.com → "Navmay Waitlist"
 
 **Edit script:**
 Open sheet → Extensions → Apps Script

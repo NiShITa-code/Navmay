@@ -38,7 +38,7 @@ const About = () => {
           <span className="section-badge">About Us</span>
           <h2 className="section-title">Transforming Healthcare Delivery</h2>
           <p className="section-subtitle">
-            At Navamay, we're committed to bridging the gap between patients and healthcare
+            At Navmay, we're committed to bridging the gap between patients and healthcare
             providers through innovative technology solutions.
           </p>
         </div>

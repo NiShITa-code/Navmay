@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3>Navamay</h3>
+            <h3>Navmay</h3>
             <p>Building the future of healthcare technology</p>
           </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Navamay. All rights reserved.</p>
+          <p>&copy; {currentYear} Navmay. All rights reserved.</p>
           <p className="footer-tagline">Innovating Healthcare Through Technology</p>
         </div>
       </div>

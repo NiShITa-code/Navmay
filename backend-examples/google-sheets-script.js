@@ -3,7 +3,7 @@
  *
  * SETUP INSTRUCTIONS:
  * 1. Go to Google Sheets and create a new spreadsheet
- * 2. Name it "Navamay Waitlist"
+ * 2. Name it "Navmay Waitlist"
  * 3. Add headers in first row: Email | Product | Timestamp
  * 4. Go to Extensions → Apps Script
  * 5. Paste this code

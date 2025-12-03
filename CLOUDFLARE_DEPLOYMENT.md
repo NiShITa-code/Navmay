@@ -1,4 +1,4 @@
-# 🌐 Deploy Navamay Website to Cloudflare Pages
+# 🌐 Deploy Navmay Website to Cloudflare Pages
 
 Complete guide to deploy your React website to Cloudflare Pages with your custom domain.
 
@@ -60,7 +60,7 @@ git push origin main
    - Click **"Connect GitHub"** (or GitLab)
    - Authorize Cloudflare to access your repositories
    - Select **"Only select repositories"**
-   - Choose your **Navamay repository**
+   - Choose your **Navmay repository**
    - Click **"Install & Authorize"**
 
 5. **Select Repository**
@@ -70,7 +70,7 @@ git push origin main
 ### Step 4: Configure Build Settings
 
 **Project Settings:**
-- **Project name:** `navamay` (or your choice - this will be your subdomain)
+- **Project name:** `navmay` (or your choice - this will be your subdomain)
 - **Production branch:** `main` (or your main branch name)
 
 **Build Settings:**
@@ -102,7 +102,7 @@ Click **"Add variable"** and add:
 ### Step 6: View Your Site
 
 Once deployed, you'll see:
-- ✅ **Your site URL:** `https://navamay.pages.dev`
+- ✅ **Your site URL:** `https://navmay.pages.dev`
 - Or whatever name you chose: `https://your-project-name.pages.dev`
 
 **Test it!** Click the URL to open your website.
@@ -134,7 +134,7 @@ npm run build
 ### Step 4: Deploy
 
 ```bash
-wrangler pages deploy dist --project-name=navamay
+wrangler pages deploy dist --project-name=navmay
 ```
 
 First time, it will create the project. Subsequent deployments update it.
@@ -149,7 +149,7 @@ You have a domain registered with Cloudflare. Let's connect it!
 
 1. **Go to Pages Dashboard**
    - [https://dash.cloudflare.com](https://dash.cloudflare.com) → Pages
-   - Click on your **"navamay"** project
+   - Click on your **"navmay"** project
 
 2. **Navigate to Custom Domains**
    - Click **"Custom domains"** tab
@@ -171,7 +171,7 @@ Cloudflare automatically creates:
 ```
 Type: CNAME
 Name: @
-Target: navamay.pages.dev
+Target: navmay.pages.dev
 Proxy: Enabled (orange cloud)
 ```
 
@@ -179,7 +179,7 @@ Proxy: Enabled (orange cloud)
 ```
 Type: CNAME
 Name: www
-Target: navamay.pages.dev
+Target: navmay.pages.dev
 Proxy: Enabled (orange cloud)
 ```
 
@@ -555,7 +555,7 @@ npm run build
 npm run preview
 
 # Deploy via CLI
-wrangler pages deploy dist --project-name=navamay
+wrangler pages deploy dist --project-name=navmay
 
 # View deployments
 wrangler pages deployment list
@@ -566,4 +566,4 @@ wrangler pages deployment tail
 
 ---
 
-**Congratulations! Your Navamay website is live on Cloudflare! 🎊**
+**Congratulations! Your Navmay website is live on Cloudflare! 🎊**
