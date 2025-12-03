@@ -1,0 +1,221 @@
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f6f8fc 0%, #ffffff 100%);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  animation: float 20s ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, var(--primary-400), var(--primary-600));
+  top: -150px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.orb-2 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, var(--primary-300), var(--primary-500));
+  bottom: -100px;
+  left: -100px;
+  animation-delay: 5s;
+}
+
+.orb-3 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, var(--primary-200), var(--primary-400));
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 10s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  padding: var(--spacing-4xl) 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: white;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: var(--spacing-xl);
+  border: 1px solid var(--gray-200);
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-xl);
+  letter-spacing: -1px;
+  color: var(--gray-900);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-800) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  color: var(--gray-600);
+  max-width: 700px;
+  margin: 0 auto var(--spacing-2xl);
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-4xl);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 1rem 2rem;
+  border-radius: var(--radius-xl);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
+  color: white;
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--primary-600);
+  border: 2px solid var(--primary-600);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-50);
+  transform: translateY(-2px);
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-2xl);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-800) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat p {
+  color: var(--gray-600);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero-content {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .stat h3 {
+    font-size: 1.5rem;
+  }
+
+  .stat p {
+    font-size: 0.75rem;
+  }
+}
