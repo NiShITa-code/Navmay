@@ -34,7 +34,10 @@ const Footer = () => {
             <div className="footer-section">
               <h4>Products</h4>
               <ul>
-                <li><a href="#">ClinicBot</a></li>
+                <li><a onClick={() => {
+                  const el = document.getElementById('products')
+                  if (el) el.scrollIntoView({ behavior: 'smooth' })
+                }}>CliniqBot</a></li>
               </ul>
             </div>
 

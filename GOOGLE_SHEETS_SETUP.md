@@ -78,7 +78,7 @@ function doPost(e) {
 
     // Extract values
     const email = data.email || '';
-    const product = data.product || 'ClinicBot';
+    const product = data.product || 'CliniqBot';
     const timestamp = data.timestamp || new Date().toISOString();
 
     // Validate email
@@ -104,7 +104,7 @@ function doPost(e) {
     // Uncomment the lines below to get email alerts
     // MailApp.sendEmail({
     //   to: 'your-email@example.com',
-    //   subject: '🎉 New ClinicBot Waitlist Signup!',
+    //   subject: '🎉 New CliniqBot Waitlist Signup!',
     //   body: 'New email: ' + email + '\nTime: ' + timestamp
     // });
 
@@ -144,7 +144,7 @@ function testPost() {
     postData: {
       contents: JSON.stringify({
         email: 'test@example.com',
-        product: 'ClinicBot',
+        product: 'CliniqBot',
         timestamp: new Date().toISOString()
       })
     }
@@ -231,7 +231,7 @@ function testPost() {
 
 2. **Open Your Website**
    - Go to http://localhost:3000
-   - Click on the ClinicBot product card
+   - Click on the CliniqBot product card
    - Enter a test email: `test@yourname.com`
    - Click "Join Waitlist"
 
@@ -329,7 +329,7 @@ Want to get an email every time someone signs up?
    // Remove the // from these lines:
    MailApp.sendEmail({
      to: 'your-email@example.com',  // Change to YOUR email
-     subject: '🎉 New ClinicBot Waitlist Signup!',
+     subject: '🎉 New CliniqBot Waitlist Signup!',
      body: 'New email: ' + email + '\nTime: ' + timestamp
    });
    ```

@@ -54,13 +54,13 @@ export default async function handler(req, res) {
       await sgMail.send({
         to: process.env.ADMIN_EMAIL,
         from: process.env.FROM_EMAIL,
-        subject: 'New ClinicBot Waitlist Signup! 🎉',
+        subject: 'New CliniqBot Waitlist Signup! 🎉',
         text: `New waitlist signup: ${email}`,
         html: `
           <div style="font-family: Arial, sans-serif; padding: 20px;">
             <h2>New Waitlist Signup!</h2>
             <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Product:</strong> ClinicBot</p>
+            <p><strong>Product:</strong> CliniqBot</p>
             <p><strong>Time:</strong> ${new Date().toLocaleString()}</p>
           </div>
         `,

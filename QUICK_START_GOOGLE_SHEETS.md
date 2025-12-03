@@ -37,7 +37,7 @@ function doPost(e) {
     const data = JSON.parse(e.postData.contents);
 
     const email = data.email || '';
-    const product = data.product || 'ClinicBot';
+    const product = data.product || 'CliniqBot';
     const timestamp = data.timestamp || new Date().toISOString();
 
     // Check if email exists
@@ -101,7 +101,7 @@ npm run dev
 ```
 
 1. Open http://localhost:3000
-2. Click ClinicBot → Join Waitlist
+2. Click CliniqBot → Join Waitlist
 3. Enter test email: `test@example.com`
 4. Submit!
 5. **Check your Google Sheet** - email should appear! 🎉

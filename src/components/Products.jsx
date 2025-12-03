@@ -27,7 +27,7 @@ const Products = ({ onOpenWaitlist }) => {
               </svg>
             </div>
 
-            <h3 className="product-name">ClinicBot</h3>
+            <h3 className="product-name">CliniqBot</h3>
 
             <p className="product-tagline">
               AI-Powered Healthcare Assistant

@@ -24,7 +24,7 @@ This guide shows you how to collect email addresses from your waitlist. Choose t
 1. Go to [https://formspree.io](https://formspree.io)
 2. Sign up for free account
 3. Click **"New Form"**
-4. Name it: `ClinicBot Waitlist`
+4. Name it: `CliniqBot Waitlist`
 5. Copy your **Form ID** (looks like: `abc123xyz`)
 
 ### Step 2: Update Your Code
@@ -50,8 +50,8 @@ export const submitWaitlistEmail = async (email) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       email: email,
-      product: 'ClinicBot',
-      _subject: 'New ClinicBot Waitlist Signup!',
+      product: 'CliniqBot',
+      _subject: 'New CliniqBot Waitlist Signup!',
     }),
   })
 
@@ -115,7 +115,7 @@ function doPost(e) {
     const data = JSON.parse(e.postData.contents);
 
     const email = data.email || '';
-    const product = data.product || 'ClinicBot';
+    const product = data.product || 'CliniqBot';
     const timestamp = data.timestamp || new Date().toISOString();
 
     // Check if email already exists
@@ -215,7 +215,7 @@ Submit a test email. Check your Google Sheet - new row should appear!
 CREATE TABLE waitlist (
   id BIGSERIAL PRIMARY KEY,
   email TEXT UNIQUE NOT NULL,
-  product TEXT DEFAULT 'ClinicBot',
+  product TEXT DEFAULT 'CliniqBot',
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
@@ -419,7 +419,7 @@ npm run dev
 ```
 
 1. Open http://localhost:3000
-2. Click on ClinicBot product
+2. Click on CliniqBot product
 3. Enter test email: `test@example.com`
 4. Click "Join Waitlist"
 5. Check:

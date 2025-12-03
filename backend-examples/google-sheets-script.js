@@ -23,7 +23,7 @@ function doPost(e) {
 
     // Extract values
     const email = data.email || '';
-    const product = data.product || 'ClinicBot';
+    const product = data.product || 'CliniqBot';
     const timestamp = data.timestamp || new Date().toISOString();
 
     // Check if email already exists
@@ -74,7 +74,7 @@ function testPost() {
     postData: {
       contents: JSON.stringify({
         email: 'test@example.com',
-        product: 'ClinicBot',
+        product: 'CliniqBot',
         timestamp: new Date().toISOString()
       })
     }

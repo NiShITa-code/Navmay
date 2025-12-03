@@ -60,13 +60,13 @@ const WaitlistModal = ({ isOpen, onClose }) => {
             </svg>
           </div>
 
-          <h2>ClinicBot</h2>
+          <h2>CliniqBot</h2>
           <span className="status-badge">Coming Soon</span>
         </div>
 
         <div className="modal-body">
           <p className="modal-description">
-            ClinicBot is revolutionizing healthcare access with AI-powered appointment booking
+            CliniqBot is revolutionizing healthcare access with AI-powered appointment booking
             through WhatsApp and a comprehensive dashboard for doctors to manage their practice efficiently.
           </p>
 
@@ -97,7 +97,7 @@ const WaitlistModal = ({ isOpen, onClose }) => {
             <>
               <h3>Join the Waitlist</h3>
               <p className="waitlist-subtitle">
-                Be the first to know when we launch ClinicBot!
+                Be the first to know when we launch CliniqBot!
               </p>
 
               <form onSubmit={handleSubmit} className="waitlist-form">
@@ -140,7 +140,7 @@ const WaitlistModal = ({ isOpen, onClose }) => {
                 </svg>
               </div>
               <h3>You're on the list!</h3>
-              <p>Thank you for joining our waitlist. We'll notify you when ClinicBot launches.</p>
+              <p>Thank you for joining our waitlist. We'll notify you when CliniqBot launches.</p>
             </div>
           )}
         </div>

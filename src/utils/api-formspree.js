@@ -26,9 +26,9 @@ export const submitWaitlistEmail = async (email) => {
       },
       body: JSON.stringify({
         email: email,
-        product: 'ClinicBot',
+        product: 'CliniqBot',
         timestamp: new Date().toISOString(),
-        _subject: 'New ClinicBot Waitlist Signup!',
+        _subject: 'New CliniqBot Waitlist Signup!',
       }),
     })
 

@@ -10,7 +10,7 @@
  * 3. Create a table named 'waitlist':
  *    - id: int8 (primary key, auto-increment)
  *    - email: text (unique)
- *    - product: text (default 'ClinicBot')
+ *    - product: text (default 'CliniqBot')
  *    - created_at: timestamp (default now())
  * 4. Get your API URL and anon key from Settings → API
  * 5. Install: npm install @supabase/supabase-js
@@ -55,7 +55,7 @@ export default async function handler(req, res) {
       .insert([
         {
           email: email,
-          product: 'ClinicBot',
+          product: 'CliniqBot',
           created_at: new Date().toISOString()
         }
       ])
@@ -94,7 +94,7 @@ export default async function handler(req, res) {
 CREATE TABLE waitlist (
   id BIGSERIAL PRIMARY KEY,
   email TEXT UNIQUE NOT NULL,
-  product TEXT DEFAULT 'ClinicBot',
+  product TEXT DEFAULT 'CliniqBot',
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 

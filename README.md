@@ -1,6 +1,6 @@
 # Navamay - Healthcare Innovation Platform
 
-A modern, production-ready React application for Navamay, a healthcare technology company building innovative products like ClinicBot.
+A modern, production-ready React application for Navamay, a healthcare technology company building innovative products like CliniqBot.
 
 ![React](https://img.shields.io/badge/React-18.3.1-blue)
 ![Vite](https://img.shields.io/badge/Vite-5.3.1-purple)
@@ -17,7 +17,7 @@ A modern, production-ready React application for Navamay, a healthcare technolog
 
 ## 📦 Products
 
-### ClinicBot
+### CliniqBot
 AI-powered doctor appointment booking through WhatsApp with an integrated dashboard for healthcare providers. Features include:
 - WhatsApp integration for easy booking
 - AI-powered scheduling system
@@ -304,7 +304,7 @@ async function sendWelcomeEmail(email) {
   await sgMail.send({
     to: email,
     from: 'hello@navamay.com',
-    subject: 'Welcome to ClinicBot Waitlist!',
+    subject: 'Welcome to CliniqBot Waitlist!',
     text: 'Thanks for joining our waitlist...',
   })
 }
