@@ -66,7 +66,7 @@ const WaitlistModal = ({ isOpen, onClose }) => {
 
         <div className="modal-body">
           <p className="modal-description">
-            CliniqBot is revolutionizing healthcare access with AI-powered appointment booking
+            CliniqBot is revolutionizing healthcare access with appointment booking
             through WhatsApp and a comprehensive dashboard for doctors to manage their practice efficiently.
           </p>
 

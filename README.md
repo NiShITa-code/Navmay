@@ -18,9 +18,9 @@ A modern, production-ready React application for Navamay, a healthcare technolog
 ## 📦 Products
 
 ### CliniqBot
-AI-powered doctor appointment booking through WhatsApp with an integrated dashboard for healthcare providers. Features include:
+Doctor appointment booking through WhatsApp with an integrated dashboard for healthcare providers. Features include:
 - WhatsApp integration for easy booking
-- AI-powered scheduling system
+- Smart scheduling system
 - Doctor dashboard for practice management
 - Real-time notifications
 - 24/7 availability

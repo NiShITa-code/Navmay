@@ -18,10 +18,6 @@ const Hero = () => {
 
       <div className="container">
         <div className="hero-content">
-          <div className="hero-badge fade-in">
-            <span>🏥 Healthcare Technology Leaders</span>
-          </div>
-
           <h1 className="hero-title slide-up">
             Innovating Healthcare
             <br />
@@ -71,8 +67,8 @@ const Hero = () => {
               <p>Always Available</p>
             </div>
             <div className="stat">
-              <h3>AI Powered</h3>
-              <p>Smart Technology</p>
+              <h3>Reliable</h3>
+              <p>Trusted Solutions</p>
             </div>
           </div>
         </div>
