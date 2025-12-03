@@ -28,6 +28,29 @@
 
 .logo {
   display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.logo:hover {
+  transform: translateY(-1px);
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  transition: transform var(--transition-base);
+}
+
+.logo:hover .logo-icon {
+  transform: scale(1.05);
+}
+
+.logo-text {
+  display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
 }
@@ -40,6 +63,8 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: -0.5px;
+  margin: 0;
+  line-height: 1;
 }
 
 .logo-tagline {
@@ -167,6 +192,11 @@
 
   .nav-links li a {
     font-size: 1.125rem;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
   }
 
   .logo h1 {

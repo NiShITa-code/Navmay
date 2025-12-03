@@ -1,0 +1,28 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield Shape -->
+  <path d="M16 2L4 8V14C4 21.25 8.25 27.25 16 30C23.75 27.25 28 21.25 28 14V8L16 2Z"
+        fill="url(#gradient)"
+        stroke="#2563eb"
+        stroke-width="1"/>
+
+  <!-- Medical Cross -->
+  <path d="M16 10V22M10 16H22"
+        stroke="white"
+        stroke-width="2.5"
+        stroke-linecap="round"/>
+
+  <!-- Pulse -->
+  <path d="M9 19L11 19L12 17L14 21L15 19L17 19"
+        stroke="white"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity="0.7"/>
+
+  <defs>
+    <linearGradient id="gradient" x1="4" y1="2" x2="28" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+  </defs>
+</svg>

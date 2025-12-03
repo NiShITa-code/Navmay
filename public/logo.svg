@@ -1,0 +1,33 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Shield/Protection -->
+  <path d="M32 4L8 16V28C8 42.5 16.5 54.5 32 60C47.5 54.5 56 42.5 56 28V16L32 4Z"
+        fill="url(#shield-gradient)"
+        stroke="url(#stroke-gradient)"
+        stroke-width="2"/>
+
+  <!-- Medical Cross with Modern Touch -->
+  <path d="M32 20V44M20 32H44"
+        stroke="white"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+  <!-- Tech Pulse Line -->
+  <path d="M18 38L22 38L24 34L28 42L30 38L34 38"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity="0.8"/>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="shield-gradient" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+    <linearGradient id="stroke-gradient" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+</svg>
