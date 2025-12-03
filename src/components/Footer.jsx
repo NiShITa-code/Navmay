@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="footer-section">
               <h4>Connect</h4>
               <ul>
-                <li><a href="mailto:info@navamay.com">Email</a></li>
+                <li><a href="mailto:admin@cliniqbot.com">Email</a></li>
               </ul>
             </div>
           </div>

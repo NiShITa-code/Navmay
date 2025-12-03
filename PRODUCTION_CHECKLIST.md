@@ -234,7 +234,7 @@ Consider adding these features:
 
 If you need assistance with production deployment:
 
-📧 Email: info@navamay.com
+📧 Email: admin@cliniqbot.com
 
 ---
 

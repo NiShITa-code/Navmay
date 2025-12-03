@@ -473,7 +473,7 @@ If something's not working:
 1. Check this guide again
 2. Look at the troubleshooting section
 3. Check browser console for errors (F12)
-4. Email: info@navamay.com
+4. Email: admin@cliniqbot.com
 
 ---
 

@@ -541,7 +541,7 @@ Your website is now:
 - Docs: https://developers.cloudflare.com/pages
 
 **Project Support:**
-- Email: info@navamay.com
+- Email: admin@cliniqbot.com
 
 ---
 

@@ -526,7 +526,7 @@ Configure server for SPA routing:
 
 ## Need Help?
 
-Contact: info@navamay.com
+Contact: admin@cliniqbot.com
 
 ---
 

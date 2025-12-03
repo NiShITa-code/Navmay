@@ -147,6 +147,6 @@ See **GOOGLE_SHEETS_SETUP.md** for:
 
 ---
 
-**Questions?** Email: info@navamay.com
+**Questions?** Email: admin@cliniqbot.com
 
 **Happy collecting! 📧✨**

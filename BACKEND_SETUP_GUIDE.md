@@ -505,7 +505,7 @@ res.setHeader('Access-Control-Allow-Origin', '*')
 
 ## 📞 Need Help?
 
-Contact: info@navamay.com
+Contact: admin@cliniqbot.com
 
 ---
 

@@ -438,7 +438,7 @@ Copyright © 2024 Navamay. All rights reserved.
 
 ## 👥 Support
 
-For support, email info@navamay.com
+For support, email admin@cliniqbot.com
 
 ---
 

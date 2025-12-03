@@ -20,36 +20,61 @@
 }
 
 .contact-card {
-  background: var(--gray-50);
+  background: white;
   padding: var(--spacing-2xl);
   border-radius: var(--radius-xl);
   text-align: center;
   transition: all var(--transition-base);
   border: 2px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-600), var(--primary-400));
+  transform: scaleX(0);
+  transition: transform var(--transition-slow);
 }
 
 .contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--primary-200);
-  background: white;
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-300);
+}
+
+.contact-card:hover::before {
+  transform: scaleX(1);
 }
 
 .contact-icon {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
-  border-radius: var(--radius-lg);
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-800));
+  border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto var(--spacing-lg);
   color: white;
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+  transition: all var(--transition-base);
+}
+
+.contact-card:hover .contact-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.4);
 }
 
 .contact-icon svg {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 
 .contact-card h3 {
@@ -66,14 +91,30 @@
 .contact-link {
   display: inline-block;
   color: var(--primary-600);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.125rem;
-  transition: color var(--transition-fast);
+  transition: all var(--transition-fast);
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.contact-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-600), var(--primary-400));
+  transition: width var(--transition-base);
 }
 
 .contact-link:hover {
   color: var(--primary-700);
-  text-decoration: underline;
+}
+
+.contact-link:hover::after {
+  width: 100%;
 }
 
 .contact-hours,

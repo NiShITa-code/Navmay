@@ -86,4 +86,4 @@ Wait 2-3 minutes... Done! 🎉
 
 **Full guide:** See `CLOUDFLARE_DEPLOYMENT.md`
 
-**Need help?** Email: info@navamay.com
+**Need help?** Email: admin@cliniqbot.com

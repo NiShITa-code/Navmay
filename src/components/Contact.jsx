@@ -23,8 +23,8 @@ const Contact = () => {
               </div>
               <h3>Email Us</h3>
               <p>Drop us a line anytime</p>
-              <a href="mailto:info@navamay.com" className="contact-link">
-                info@navamay.com
+              <a href="mailto:admin@cliniqbot.com" className="contact-link">
+                admin@cliniqbot.com
               </a>
             </div>
 
