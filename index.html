@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navamay - Healthcare Innovation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1>Navamay</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Innovating Healthcare Through Technology</h1>
+                <p class="hero-subtitle">Navamay builds cutting-edge healthcare products that make quality healthcare accessible to everyone</p>
+                <a href="#products" class="cta-button">Explore Our Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Navamay</h2>
+            <p class="about-text">
+                At Navamay, we're committed to transforming healthcare delivery through innovative technology solutions.
+                Our mission is to bridge the gap between patients and healthcare providers, making quality healthcare
+                accessible, efficient, and user-friendly.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card" id="cliniqbot-card">
+                    <div class="product-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            <path d="M8 10h.01"></path>
+                            <path d="M12 10h.01"></path>
+                            <path d="M16 10h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="product-name">ClinicBot</h3>
+                    <p class="product-description">
+                        AI-powered doctor appointment booking through WhatsApp with an integrated dashboard for healthcare providers.
+                    </p>
+                    <button class="product-button" onclick="openWaitlistModal()">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-text">Have questions? We'd love to hear from you.</p>
+            <a href="mailto:info@navamay.com" class="contact-email">info@navamay.com</a>
+        </div>
+    </section>
+
+    <!-- Waitlist Modal -->
+    <div id="waitlistModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeWaitlistModal()">&times;</span>
+            <div class="modal-header">
+                <h2>ClinicBot</h2>
+                <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    ClinicBot is revolutionizing healthcare access with AI-powered appointment booking through WhatsApp
+                    and a comprehensive dashboard for doctors to manage their practice efficiently.
+                </p>
+                <h3>Join the Waitlist</h3>
+                <p class="waitlist-subtitle">Be the first to know when we launch!</p>
+                <form id="waitlistForm" onsubmit="handleWaitlistSubmit(event)">
+                    <input
+                        type="email"
+                        id="emailInput"
+                        class="email-input"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                    <button type="submit" class="submit-button">Join Waitlist</button>
+                </form>
+                <div id="successMessage" class="success-message">
+                    Thank you! You've been added to our waitlist. We'll notify you when ClinicBot launches.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Navamay. All rights reserved.</p>
+            <p>Building the future of healthcare technology</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
