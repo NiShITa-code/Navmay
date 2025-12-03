@@ -1,6 +1,6 @@
 # 📋 Production Readiness Checklist
 
-Use this checklist to ensure your Navamay website is production-ready.
+Use this checklist to ensure your Navmay website is production-ready.
 
 ## ✅ Pre-Launch Checklist
 

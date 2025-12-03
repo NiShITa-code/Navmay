@@ -34,10 +34,10 @@ git push origin main
    - Click "Create application"
    - Click "Connect to Git"
    - Choose GitHub/GitLab
-   - Select your Navamay repository
+   - Select your Navmay repository
 
 4. **Configure Build**
-   - **Project name:** `navamay`
+   - **Project name:** `navmay`
    - **Framework:** Vite
    - **Build command:** `npm run build`
    - **Output directory:** `dist`
@@ -51,7 +51,7 @@ git push origin main
 
 Wait 2-3 minutes... Done! 🎉
 
-**Your site:** `https://navamay.pages.dev`
+**Your site:** `https://navmay.pages.dev`
 
 ---
 

@@ -54,7 +54,7 @@ const Navbar = () => {
               </defs>
             </svg>
             <div className="logo-text">
-              <h1>Navamay</h1>
+              <h1>Navmay</h1>
               <span className="logo-tagline">Healthcare Innovation</span>
             </div>
           </div>

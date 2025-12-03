@@ -1,6 +1,6 @@
-# Navamay - Healthcare Innovation Platform
+# Navmay - Healthcare Innovation Platform
 
-A modern, production-ready React application for Navamay, a healthcare technology company building innovative products like CliniqBot.
+A modern, production-ready React application for Navmay, a healthcare technology company building innovative products like CliniqBot.
 
 ![React](https://img.shields.io/badge/React-18.3.1-blue)
 ![Vite](https://img.shields.io/badge/Vite-5.3.1-purple)
@@ -151,12 +151,12 @@ npm run preview
 
 2. **Build Docker image**
    ```bash
-   docker build -t navamay-web .
+   docker build -t navmay-web .
    ```
 
 3. **Run container**
    ```bash
-   docker run -p 80:80 navamay-web
+   docker run -p 80:80 navmay-web
    ```
 
 ## 🔌 Backend Integration
@@ -303,7 +303,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 async function sendWelcomeEmail(email) {
   await sgMail.send({
     to: email,
-    from: 'hello@navamay.com',
+    from: 'hello@navmay.com',
     subject: 'Welcome to CliniqBot Waitlist!',
     text: 'Thanks for joining our waitlist...',
   })
@@ -332,7 +332,7 @@ Create a `.env` file based on `.env.example`:
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `VITE_API_URL` | Backend API base URL | `https://api.navamay.com/api` |
+| `VITE_API_URL` | Backend API base URL | `https://api.navmay.com/api` |
 | `VITE_WAITLIST_ENDPOINT` | Waitlist endpoint path | `/waitlist` |
 | `VITE_ENV` | Environment mode | `production` |
 | `VITE_GA_TRACKING_ID` | Google Analytics ID (optional) | `G-XXXXXXXXXX` |
@@ -434,7 +434,7 @@ npm install
 
 ## 📝 License
 
-Copyright © 2024 Navamay. All rights reserved.
+Copyright © 2024 Navmay. All rights reserved.
 
 ## 👥 Support
 
@@ -442,4 +442,4 @@ For support, email admin@cliniqbot.com
 
 ---
 
-**Built with ❤️ by the Navamay Team**
+**Built with ❤️ by the Navmay Team**

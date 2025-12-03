@@ -96,7 +96,7 @@ Test the waitlist form. Check your email inbox for notifications!
 ### Step 1: Create Google Sheet
 
 1. Go to [Google Sheets](https://sheets.google.com)
-2. Create new spreadsheet: **"Navamay Waitlist"**
+2. Create new spreadsheet: **"Navmay Waitlist"**
 3. Add headers in Row 1:
    - Column A: `Email`
    - Column B: `Product`
@@ -199,7 +199,7 @@ Submit a test email. Check your Google Sheet - new row should appear!
 1. Go to [https://supabase.com](https://supabase.com)
 2. Sign up for free
 3. Click **"New Project"**
-4. Name: `navamay-waitlist`
+4. Name: `navmay-waitlist`
 5. Create strong database password
 6. Select region closest to you
 7. Wait 2 minutes for project to initialize

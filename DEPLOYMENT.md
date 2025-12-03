@@ -1,6 +1,6 @@
 # 🚀 Production Deployment Guide
 
-Complete step-by-step guide to deploy Navamay website to production.
+Complete step-by-step guide to deploy Navmay website to production.
 
 ## Table of Contents
 
@@ -156,13 +156,13 @@ npm run build
 ### Step 2: Create S3 Bucket
 
 ```bash
-aws s3 mb s3://navamay-website
+aws s3 mb s3://navmay-website
 ```
 
 ### Step 3: Enable Static Website Hosting
 
 ```bash
-aws s3 website s3://navamay-website \
+aws s3 website s3://navmay-website \
   --index-document index.html \
   --error-document index.html
 ```
@@ -180,7 +180,7 @@ Create `bucket-policy.json`:
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::navamay-website/*"
+      "Resource": "arn:aws:s3:::navmay-website/*"
     }
   ]
 }
@@ -190,21 +190,21 @@ Apply policy:
 
 ```bash
 aws s3api put-bucket-policy \
-  --bucket navamay-website \
+  --bucket navmay-website \
   --policy file://bucket-policy.json
 ```
 
 ### Step 5: Upload Files
 
 ```bash
-aws s3 sync dist/ s3://navamay-website --delete
+aws s3 sync dist/ s3://navmay-website --delete
 ```
 
 ### Step 6: Setup CloudFront (CDN)
 
 1. Go to AWS CloudFront Console
 2. Create Distribution:
-   - **Origin Domain**: `navamay-website.s3.amazonaws.com`
+   - **Origin Domain**: `navmay-website.s3.amazonaws.com`
    - **Viewer Protocol Policy**: Redirect HTTP to HTTPS
    - **Default Root Object**: `index.html`
 3. Create **Error Pages**:
@@ -225,7 +225,7 @@ Create `deploy.sh`:
 ```bash
 #!/bin/bash
 npm run build
-aws s3 sync dist/ s3://navamay-website --delete
+aws s3 sync dist/ s3://navmay-website --delete
 aws cloudfront create-invalidation \
   --distribution-id YOUR_DISTRIBUTION_ID \
   --paths "/*"
@@ -288,13 +288,13 @@ dist
 ### Step 3: Build Image
 
 ```bash
-docker build -t navamay-web:latest .
+docker build -t navmay-web:latest .
 ```
 
 ### Step 4: Run Locally (Test)
 
 ```bash
-docker run -p 8080:80 navamay-web:latest
+docker run -p 8080:80 navmay-web:latest
 ```
 
 Visit: `http://localhost:8080`
@@ -305,12 +305,12 @@ Visit: `http://localhost:8080`
 
 ```bash
 # Push to Docker Hub
-docker tag navamay-web:latest yourusername/navamay-web:latest
-docker push yourusername/navamay-web:latest
+docker tag navmay-web:latest yourusername/navmay-web:latest
+docker push yourusername/navmay-web:latest
 
 # On server
-docker pull yourusername/navamay-web:latest
-docker run -d -p 80:80 --name navamay navamay-web:latest
+docker pull yourusername/navmay-web:latest
+docker run -d -p 80:80 --name navmay navmay-web:latest
 ```
 
 #### Docker Compose (Production)
@@ -322,7 +322,7 @@ version: '3.8'
 
 services:
   web:
-    image: navamay-web:latest
+    image: navmay-web:latest
     ports:
       - "80:80"
       - "443:443"

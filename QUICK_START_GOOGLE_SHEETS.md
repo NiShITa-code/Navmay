@@ -10,7 +10,7 @@ Follow these simple steps to collect waitlist emails in Google Sheets!
 
 1. Go to https://sheets.google.com
 2. Click **+ Blank** to create new sheet
-3. Name it: **"Navamay Waitlist"**
+3. Name it: **"Navmay Waitlist"**
 4. In Row 1, add headers:
    - A1: `Email`
    - B1: `Product`
@@ -128,7 +128,7 @@ vercel --prod
 
 **View emails:**
 - Go to https://sheets.google.com
-- Open "Navamay Waitlist"
+- Open "Navmay Waitlist"
 - See all signups in real-time!
 
 **Export data:**

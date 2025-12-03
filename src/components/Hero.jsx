@@ -25,7 +25,7 @@ const Hero = () => {
           </h1>
 
           <p className="hero-subtitle slide-up">
-            Navamay builds cutting-edge healthcare products that make quality
+            Navmay builds cutting-edge healthcare products that make quality
             healthcare accessible, efficient, and user-friendly for everyone.
           </p>
 
